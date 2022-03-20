@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-'''
-Created on Sat Jan 11 19:38:27 2020
-
-@author: sparkbyexamples.com
-'''
 
 import pyspark
 from pyspark.sql import SparkSession
@@ -11,7 +5,7 @@ from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 from pyspark.sql.functions import *
 
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.appName('renameColumn').getOrCreate()
 
 
 dataDF = [(('James','','Smith'),'1991-04-01','M',3000),
