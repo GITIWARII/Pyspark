@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-author SparkByExamples.com
-"""
+
 
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
-                    .appName('SparkByExamples.com') \
+                    .appName('addNewColumn') \
                     .getOrCreate()
 
 data = [('James','Smith','M',3000),
